@@ -1,45 +1,63 @@
-/*generos individuales*/
-body{
-    background: linear-gradient(to right, #b0b2b3, #434444);
-}
-*{
-    color:whitesmoke;
-    font-family:'Montserrat', sans-serif;
-    font-size: 30px;
-    padding: 5px 10px;
+/*header*/
+header{
+    background-image: url(img/fondo.jpg);
+    opacity: 0.5;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+} 
+.headerr{
+    background: rgba(1, 0, 0, 0.4);
 }
-h1{
-    font-size: 40px;
-    color: whitesmoke;
-}
-.generos-encabezado{
-    background-color: rgba(40, 40, 41, 0.685);
-    width: 1500px;
-    height:200px;
-    margin: 0 auto;
-    padding: 10px 20px;
-}
-#logo{
-    width: 100px;
-    height: 100px;
-}
-#lista{
-    background-color: rgb(99, 99, 99);
-    width: 1500px;
-}
-#lista:hover{
-    background-color: ghostwhite;
-}
-#lista a{
-    text-decoration: none;
+.headerr h1{
     color: antiquewhite;
+    font-size: 50px;
+    padding: 10px;
+    margin: 10px;
 }
-#lista a:hover{
-    text-decoration: underline;
-    color: black;
-    transition: 0.4s ease;
+.headerr p{
+    color: antiquewhite;
+    font-size: 32px;
+    padding: 10px;
+    margin: 10px;
 }
-ul, li{
-    list-style-type: none;
+header button{
+    background-color: rgba(96, 172, 207, 0.3);
+    color: white;
+    font-size:20px;
+    padding: 10px;
+    margin: 5px;
+}
+/*galeria*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    margin: 0;
+}
+img{
+    width:100%;
+}
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.colum{
+    flex: 25%;
+    padding: 5px;
+}
+.colum img{
+    margin-top: 5px;
+}
+@media (max-width:600px){
+    .colum{
+        flex: 100%;
+    }
+}
+@media (max-width:800px){
+    .colum{
+        flex: 50%;
+    }
 }
