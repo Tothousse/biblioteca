@@ -1,346 +1,45 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    font-family:'Montserrat', sans-serif;
-    font-size: 17px;
-    color: #055386;
-}
+/*generos individuales*/
 body{
-    width: 1460px;
-    margin: 0 auto;
-    background: aliceblue;
-    background: linear-gradient(to right, #cfe6f5, #055386);
+    background: linear-gradient(to right, #b0b2b3, #434444);
 }
-header{
-    background-color: #055386;
-    display: flex;
-    width:1460px;
+*{
+    color:whitesmoke;
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 5px 10px;
+    margin: 0 auto;
 }
 h1{
-    color:aliceblue;
     font-size: 40px;
-    font-weight: bold;
-    padding: 3rem;
+    color: whitesmoke;
 }
-.logo{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-/*menu*/
-header .imagen{
-    width: 10%;
-}
-header .titulo{
-    width: 30%;
-}
-header .menu{
-    width:40%;
-}
-header .redes{
-    width: 20%;
-}
-.menu{
-    width: 600px;
-}
-.menu ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 3rem;
-}
-.menu #item{
-    float: left;
-}
-.menu #item a{
-    background-color: #055386;
-    color: aliceblue;
-    padding: 12px 22px;
-    display: block;
-    font-size: 20px;
-    text-decoration: none;
-}
-.menu #subitem{
-    display: none;
-    position: absolute;
-    min-width: 220px;
-}
-.menu #item:hover #subitem{
-    display: block;
-}
-.menu #item a:hover{
-    cursor: pointer;
-    background-color: #3190cf;
-}
-video{
-    width: 600px;
-    height: 360px;
-}
-    /*redes*/
-.redes{
-    background-color: #055386;
-    float: left;
-    display: block;
-    height: 47px;
-    width: 300px;
-    padding: 3rem;
-}
-.redes ul li{
-    list-style-type: none;
-    padding: 10px;
-    margin: 0;
-}
-.redes #red{
-    float: left;
-}
-.redes #red button{
-    background-color: #055386;
-    padding: 12px 18px;
-    display: block;
-}
-.fb, .inst, .wssp{
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    border-radius: 5px;
-}
-.fb{
-    background-image: url('img/facebook.png');
-    background-repeat: no-repeat;
-}
-.inst{
-    background-image: url('img/instagram.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.wssp{
-    background-image: url('img/whatsapp.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-/*carrusel*/
-.imgsD{
-    width: 1200px;
-    height: 750px;
-    overflow: hidden;
+.generos-encabezado{
+    background-color: rgba(40, 40, 41, 0.685);
+    width: 1500px;
+    height:200px;
     margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 10px 20px;
 }
-.contenedor ul{
-    display: flex;
-    animation: cambio 40s infinite alternate linear;
-    width: calc(1200px*5);
+#logo{
+    width: 100px;
+    height: 100px;
 }
-.contenedor li{
-    width: calc(1200px*5);
-    list-style: none;
+#lista{
+    background-color: rgb(99, 99, 99);
+    width: 1500px;
 }
-.contenedor img{
-    width: 1460px;
-    height: 750px;
-    object-fit: cover;
+#lista:hover{
+    background-color: ghostwhite;
 }
-@keyframes cambio{
-    0%{margin-left: 0;}
-
-    20%{margin-left: -100%;}
-
-    40%{margin-left: -200%;}
-
-    60%{margin-left: -300%;}
-
-    80%{margin-left: -400%;}
-
-    100%{margin-left: -500%;}
-}
-/*catalogo*/
-#vision p{
-    color:white;
-    max-width: 800px;
-    text-align: justify;
-}
-.secciones{
-    width: 1460px;
-    display: flex;
-}
-.secciones a{
+#lista a{
     text-decoration: none;
-    color: #055386;
-    font-size: 30px;
-    text-align: center;
-    display: block;
+    color: antiquewhite;
 }
-.secciones a:hover{
+#lista a:hover{
     text-decoration: underline;
-    font-size: 40px;
-    transition: 0.3s ease;
-}
-.secciones .generos{
-    float:left;
-    display: block;
-    width: calc(100%/3);
-    height: 400px;
-    background-color: aliceblue;
-    border: 5px rgb(30, 76, 116) thin;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-}
-.generos:hover{
-    box-shadow: 0 2.0rem 3.0rem rgba(10, 1, 90, 0.77);
-    width: 520px;
-    height: 410px;
+    color: black;
     transition: 0.4s ease;
 }
-.generos img{
-    width: 40%;
-    height: 50%;
+ul, li{
+    list-style-type: none;
 }
-#terror:hover{
-    filter: grayscale(80%);
-    transition: 0.4s ease;
-}
-#infantil:hover{
-    filter: brightness(80%);
-    transition: 0.4s ease;
-}
-#didactico:hover{
-    filter: contrast(40%);
-    transition: 0.4s ease;
-}
-#romance:hover{
-    filter: invert(80%);
-    transition: 0.4s ease;
-}
-#cientifico:hover{
-    filter: opacity(40%);
-    transition: 0.4s ease;
-}
-#accion:hover{
-    filter: sepia(80%);
-    transition: 0.4s ease;
-}
-/*formulario*/
-form{
-    background-color: rgba(141, 165, 243, 0.3);
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-label, input{
-    margin: 5px;
-    display: block;
-    color: aliceblue;
-    font-size: 30px;
-}
-input{
-    margin: 5px;
-    display: block;
-    color: #3190cf;
-    font-size: 30px;
-}
-#form{
-    width: 150px;
-    height: 50px;
-    background-color: #cfe6f5;
-    border: 2px solid rgb(30, 76, 116);
-    border-radius: 5px;
-    color: #055386;
-}
-#titulo{
-    font-size: 30px;
-    font-weight: bold;
-}
-#solicitud{
-    color: aliceblue;
-    font-size: 40px;
-}
-/*contacto*/
-.contacto{
-    width: 1460px;
-    height: 600px;
-    background-color: #cfe6f5;
-    border: 2px thin rgb(30, 76, 116);
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px 20px;
-    display: flex;
-}
-.contacto .imagen .texto{
-    float: left;
-}
-.texto{
-    width: 60%;
-    background-color:  #cfe6f5;
-    color: #055386;
-    text-align: justify;
-}
-.parrafo{
-    font-size: 30px;
-}
-.imagen{
-    width: 40%;
-    height: 400;
-    overflow:hidden;
-}
-#foto{
-
-    width: 100%;
-    height: 50%;
-}
-.imagen #foto:hover{
-    -webkit-transform:scale(1.3);
-    transform:scale(1.3);
-}
-#animd4{
-    padding: 0;
-}
-/*animaciones de texto*/
-#anim1{
-    animation-name: size;
-	animation-duration:5s;
-	animation-direction:linear;
-}
-@keyframes size{
-    from{font-size: 30px;}
-    to{font-size: 50px;}
-}
-#anim2{
-    animation-name: colores;
-	animation-duration:5s;
-	animation-direction:alternate;
-	animation-iteration-count:infinite;
-}
-@keyframes colores{
-    from{color:#cfe6f5}
-    to{color:#055386}
-}
-#anim3{
-    animation-name: opacidad;
-	animation-duration:5s;
-	animation-direction:linear;
-	animation-iteration-count:infinite;
-}
-@keyframes opacidad{
-    from{opacity: 0.2;}
-    to{opacity:1.0;}
-}
-#anim4{
-    animation-name: sombra;
-	animation-duration:5s;
-	animation-direction:linear;
-	animation-iteration-count:infinite; 
-}
-@keyframes sombra{
-    0%{color:#cfe6f5}
-    0%{opacity: 0.3;}
-
-    50%{color: #3190cf;}
-    50%{opacity: 0.7;}
-
-    100%{color: #055386;}
-    100%{opacity:1.0}
-}
-/*Galeria*/
-
